@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tontdnr-gui",
+	"version": "${version}",
+	"name": "TontDNR Gui",
+	"description": "GUI mod from project TontDNR",
+	"authors": [
+		"StelStelox"
+	],
+	"contact": {
+		"homepage": "https://tontdnr.ru",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tontdnr-gui/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.tontdnr.gui.TontDNRGui"
+		],
+		"client": [
+			"ru.tontdnr.gui.TontDNRGuiClinet"
+		],
+		"fabric-datagen": [
+			"ru.tontdnr.gui.TontDNRGuiDataGenerator"
+		]
+	},
+	"mixins": [
+		"tontdnr-gui.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

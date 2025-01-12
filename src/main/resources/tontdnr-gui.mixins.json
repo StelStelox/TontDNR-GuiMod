@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "ru.tontdnr.gui.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"TitleScreenMixin",
+		"GameMenuScreenMixin",
+		"SplashOverlayMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
